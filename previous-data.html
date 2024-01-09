@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Humidity Sensor Analysis</title>
+
+    <!-- Materialize CSS link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Add your custom styles here -->
+    <style>
+        body {
+            background-color: #333333;
+            /* Set to your desired gray color */
+            color: #ffffff;
+            /* Set text color to contrast with the background */
+        }
+
+        nav {
+            background-color: rgba(50, 50, 200, 0.5);
+            /* Add a semi-transparent black background to the navbar for better readability */
+            height: 100px;
+            /* text-size: 25px; */
+        }
+
+        nav a {
+            color: #ffffff !important;
+            text-decoration: bold;
+        }
+
+        .container {
+            margin-top: 50px;
+            /* Adjust the top padding based on your navbar height */
+        }
+
+        iframe {
+            width: 50%;
+            height: 300px;
+            margin-bottom: 100px;
+            border: 1 px solid red;
+            border-radius: 20px;
+        }
+
+        li {
+            margin-top: 20px;
+            font-size: 40px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Materialize Navbar -->
+    <nav>
+        <div class="nav-wrapper">
+            <a href="home.html" class="brand-logo" style="padding-left:50px">Humidity Sensor Analysis</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="previous-data.html">Previous Data</a></li>
+                <li><a href="data-analysis.html">DATA ANALYSIS</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Content goes here -->
+    <h1>Past data collected from ThinkSpeak. (Last 60 readings) </h1>
+
+    <div class="container">
+        <iframe width="300" height="200" style="border: 1px solid #cccccc;"
+            src="https://thingspeak.com/channels/2235918/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe>
+        <iframe width="300" height="260" style="border: 1px solid #cccccc;"
+            src="https://thingspeak.com/channels/2235918/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe>
+        <iframe width="300" height="260" style="border: 1px solid #cccccc;"
+            src="https://thingspeak.com/channels/2235918/charts/3?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe>
+    </div>
+
+    <!-- Materialize JS (optional) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+</body>
+
+</html>

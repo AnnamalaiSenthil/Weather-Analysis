@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Humidity Sensor Analysis</title>
+
+    <!-- Materialize CSS link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Add your custom styles here -->
+    <style>
+        body {
+            background-color: #333333;
+            /* Set to your desired gray color */
+            color: #ffffff;
+            /* Set text color to contrast with the background */
+        }
+
+        nav {
+            background-color: rgba(50, 50, 200, 0.5);
+            /* Add a semi-transparent black background to the navbar for better readability */
+            height: 100px;
+            /* text-size: 25px; */
+        }
+
+        nav a {
+            color: #ffffff !important;
+            text-decoration: bold;
+        }
+
+        .container {
+            padding-top: 50px;
+            /* Adjust the top padding based on your navbar height */
+        }
+
+        iframe {
+            width: 50%;
+            height: 400px;
+            border: 1 px solid red;
+
+        }
+
+        li {
+            margin-top: 20px;
+            font-size: 25px;
+        }
+
+        p{
+            font-size: 30px;
+            padding-left:50px;
+            padding-right: 50px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Materialize Navbar -->
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo" style="padding-left:50px">Humidity Sensor Analysis</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="previous-data.html">Previous Data</a></li>
+                <li><a href="data-analysis.html">DATA ANALYSIS</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Content goes here -->
+    <!-- <div class="container">
+    HOME Section -->
+    <!-- </div> -->
+
+    <div>
+        <h1 style="padding-left:25px">ABOUT US </h1>
+        <p>The aim of this website was to provide users with some data statistics about few of the major air quality parameters. We also provide sensor data observed
+            and come up with our inferences. We have created our own air quality indexx parameter based on the sensor readings observed.
+            This parameter is dependent on temperature, humidity, dust in the air and presence of CO2(smoke). 
+            This is a weighted avg followed by some scaling of the readings obtained and has been followed from research papers.
+
+            The team: Team 16 comprises of Tanay Gad, Kuvam Pahuja, Aisha Harris and Annamalai Senthil.
+
+        </p>
+    </div>
+
+    <!-- Materialize JS (optional) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+</body>
+
+</html>
